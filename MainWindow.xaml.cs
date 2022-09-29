@@ -27,7 +27,34 @@ namespace evelinazhitkova4
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Кнопка нажата");
+            MessageBox.Show("Состояние кнопки: " + (sender as System.Windows.Controls.Primitives.ToggleButton).IsChecked);
+        }
+
+     
+        private void ToggleButton_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Boot1_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Boot2_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Boot3_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton pressed = (RadioButton)sender;
+            MessageBox.Show(pressed.Content.ToString());
         }
     }
 }

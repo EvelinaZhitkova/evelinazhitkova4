@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name ="button1" Width="60" Height="30" Background="LightBlue" Content="Hello" Click="button1_Click"/>
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
+            <MenuItem Header="_Файл">
+                <MenuItem Header="_Открыть" />
+                <MenuItem Header="_Сохранить" />
+                <Separator />
+                <MenuItem Header="_Закрыть" />
+                <CheckBox Content="Предупрежджать о несохраенных данных при закрытии" />
+                <RadioButton GroupName="Codepage" Content="Windows-1251" />
+                <RadioButton GroupName="Codepage" Content="koi8-r"/>
+                <RadioButton GroupName="Codepage" Content="UTF-8"/>
+            </MenuItem>
+            <MenuItem Header="_О программе" />
+        </Menu>
     </Grid>
 </Window>
