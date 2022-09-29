@@ -56,5 +56,14 @@ namespace evelinazhitkova4
             RadioButton pressed = (RadioButton)sender;
             MessageBox.Show(pressed.Content.ToString());
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button1_Click_1(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
